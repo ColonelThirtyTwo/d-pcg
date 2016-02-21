@@ -1,9 +1,9 @@
 {
 	"name": "d-pcg",
-	"description": "A minimal D application.",
-	"copyright": "Copyright © 2016, col",
-	"authors": ["col"],
+	"description": "D port of the PCG PRNG",
+	"copyright": "Copyright © 2016, Alex Parrill",
+	"authors": ["Alex Parrill", "M.E. O'Neill"],
 	"targetType": "library",
-	"dependencies": {
-	}
+	"homepage": "https://github.com/ColonelThirtyTwo/d-pcg",
+	"license": "Apache-2.0"
 }
