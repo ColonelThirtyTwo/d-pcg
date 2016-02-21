@@ -1,0 +1,9 @@
+{
+	"name": "d-pcg",
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2016, col",
+	"authors": ["col"],
+	"targetType": "library",
+	"dependencies": {
+	}
+}
