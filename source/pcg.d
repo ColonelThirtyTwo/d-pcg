@@ -320,6 +320,16 @@ unittest {
 	immutable testVector = [0,360236480,3576984158,3399133164,3953016716,1075407150,134550159,1121230050,697817023,1550232051,];
 	assert(gen.take(testVector.length).equal(testVector));
 }
+unittest {
+	auto gen1 = PCG32(456789);
+	auto gen2 = gen1.save;
+	
+	enum iters = 10000;
+	gen1.popFrontN(10000);
+	foreach(i; 0..10000)
+		gen2.popFront();
+	assert(gen1.take(10).equal(gen2.take(10)));
+}
 
 /+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  + Output functions.
